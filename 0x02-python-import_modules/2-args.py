@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if count == 0:
         print("{} argunments.".format(count))
     elif count == 1:
-        print("{} argunments.".format(count))
+        print("{} argunments:".format(count))
     else:
         print("{} arguments:".format(count))
     for index in range(count):
