@@ -5,6 +5,6 @@
 
 def max_integer(my_list=[]):
     my_list.sort()
-    return my_list[-1]
     if my_list == "":
         return None
+    return my_list[-1]
