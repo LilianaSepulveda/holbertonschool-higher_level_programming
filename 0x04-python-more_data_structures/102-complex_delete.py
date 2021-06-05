@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-# function that deletes keys with a specific value in a dictionary
+# function deletes keys with a specific value in a dictionary
 
 
 def complex_delete(a_dictionary, value):
     while value in a_dictionary.values():
-        for key, value in a_dictionary.items():
-            del a_dictionary[key]
-            break
+        for k, v in a_dictionary.items():
+            if v == value:
+                del a_dictionary[k]
+                break
     return a_dictionary
