@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# function thar raises a type exection
+# function that raises a type exception
 
 
 def raise_exception():
