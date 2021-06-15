@@ -3,15 +3,16 @@
 
 
 class Rectangle:
-    """Class Rectangle that defines a rectangle"""
+    """Class Rectangle that defines a rectangle
+    """
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
         parameters:
             width (int): width of the new rectangle.
             height (int): height of a new rectangle.
         """
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
