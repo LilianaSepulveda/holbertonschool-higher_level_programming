@@ -2,9 +2,6 @@
 """contanins an class taht defines a rectangle"""
 
 
-from typing import AsyncIterable
-
-
 class Rectangle:
     """Class Rectangle that defines a rectangle
     """
