@@ -56,13 +56,13 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """print the rectangle with the # character"""
+        """strins representation, print the rectangle with the # character"""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
         aux = []
         for i in range(self.__height):
             [aux.append("#") for j in range(self.__width)]
-            if i != self.__height -1:
+            if i != (self.__height - 1):
                 aux.append("\n")
         return ("".join(aux))
