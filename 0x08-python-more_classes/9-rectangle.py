@@ -79,11 +79,9 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Return a new rectangle instance, with width and height equal to size.
-            parameters:
-                size (int): width and height of a new Rectangle
+        """Class method that return a square
         """
-        return cls(size, size)
+        return Rectangle(size, size)
 
     def __str__(self):
         """strins representation of the rectangle with the # character"""
