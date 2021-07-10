@@ -1,0 +1,109 @@
+# 0-add_integer.txt
+
+=======================
+How use 0-ass_integer.py
+=======================
+
+This module define an addition function ``add_integer(a, b=98)``.
+
+Mode use
+========
+``add_integer(...)`` return the addition of its two arguments.
+
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(-1, 2)
+1
+
+the function works with negative values
+
+>>> add_integer(1.0, 2.0)
+3
+
+floats are casted to ints before addition is performed
+
+>>> add_integer(-5.3, 8,4)
+Traceback (most recent call last):
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+the function recive two arguments
+
+>>> add_integer(-5.3, 8.4)
+3
+
+>>> add_integer(-1.0, -2.0)
+-3
+
+the function works whit negative value float
+
+>>> add_integer(4.2, 3)
+7
+
+>>> add_integer(1)
+99
+
+the secund argument is optional, by default it is 98
+
+Non-number
+==========
+
+```add_integer()``` expects that both arguments are integers or float.
+otherwise raise TypeError
+
+>>> add_integer(true, 2)
+Traceback (most recent call last):
+NameError: name 'true' is not defined
+
+>>> add_integer("hello", 22)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer('true', 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(3, "wordl")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(3.5, none)
+Traceback (most recent call last):
+NameError: name 'none' is not defined
+
+>>> add_integer(3.5, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer("hello", "holberton")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer('C')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(3, b=6)
+9
+
+>>> add_integer(float("dog"), a=4)
+Traceback (most recent call last):
+ValueError: could not convert string to float: 'dog'
+
+>>> add_integer(5, int('g'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'g'
+
+>>> add_integer(3, float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('NaN'), 4)
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
