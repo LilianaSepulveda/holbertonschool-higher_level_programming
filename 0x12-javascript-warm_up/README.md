@@ -1,7 +1,7 @@
 # 0x12. JavaScript - Warm up
 ***
 
-![JS](https://camilomontoyau.medium.com/hablemos-de-javascript-a4c5070f39e6)
+![JS](https://i.imgur.com/JjMICe7.jpg)
 
 This project aims to learn about the _JavaScript_ language, how to run, create variables and constants. You will also learn scope variables, use for and while loops, among other things.
 
