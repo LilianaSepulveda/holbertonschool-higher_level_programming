@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const ArgPass = process.argv.lenght;
+const ArgPass = process.argv.length;
 if (ArgPass === 2) {
   console.log('No argument');
 } else if (ArgPass === 3) {
