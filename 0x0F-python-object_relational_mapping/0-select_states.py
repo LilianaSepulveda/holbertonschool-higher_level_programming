@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# List all states from database hbtn_0e_0usa
+"""
+Module doc
+"""
 
 import MySQLdb
 from sys import argv
