@@ -29,7 +29,7 @@
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 * Your code should not be executed when imported (by using if __name__ == "__main__":)
 
-## Authors ✒️
+## Author ✒️
 ***
 * Martha Liliana Sepulveda Lindarte <[LilianaSepulveda](https://github.com/LilianaSepulveda)>
 
